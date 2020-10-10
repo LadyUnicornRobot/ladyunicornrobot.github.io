@@ -1,45 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Sansita+Swashed:wght@300&display=swap');
+
+
 body {
 	text-align: center;
 }
+
 header,
 footer {
-	background-color: #000;
-	color: #fff;
+	background-color:#416788;
+	color: #FFBC0A;
 	padding: 10px;
 }
 
 footer {
 	font-size: 13px;
 	letter-spacing: 1.5pt;
+	font-family: "Playfair Display", serif;
 }
 
+h1 {
+	font-family: Montserrat, sans-serif;
+}
+h2 {
+	font-family: "Sansita Swashed", sans-serif;
+}
 h1,
 h2 {
 	margin: 0;
 }
 
 h2, #currentdate {
-	color: yellow;
+	color: #A4B8C4;
 }
 
 main {
 	margin: 10px auto;
 	border: 1px solid #999;
-	padding: 10px;
+	padding: 15px;
 	max-width: 500px;
-	background-color: #abe;
-	box-shadow: 0 0 30px;
+	background-color: #AF4657;
+	
 }
 
 h3 {
 	font-size: 24px;
 	margin: 0 0 15px 0;
-	border-bottom: 1px solid #333;
-	padding: 0;
+	border-bottom: 1px solid #0D0628;
+	padding: 0 0 10px 0;
+	font-family: Montserrat, sans-serif;
+	color:#0D0628;
+}
+
+hr {
+	background-color: #0D0628;
+	border: none;
+	height: .5px;
 }
 
 label {
 	display: block;
-	margin: 5px;
+	margin: 12px;
+	font-family: "Sansita Swashed", serif;
+	color: #0D0628;
 }
 
+input {
+	padding: .5rem;
+	font-family: Montserrat, sans-serif;
+}
+
+button {
+	padding: 8px 12px;
+	font-family: Montserrat, serif;
+	color: #0D0628;
+	background-color: #FFBC0A;
+	border: none;
+	border-radius: 3px;
+}
+
+#output {
+	font-family: Montserrat, sans-serif;
+	font-size: 1.3em;
+	color: #FFBC0A;
+	padding: 8px 0 0 0;
+}
