@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Weather Shoes - Sarah Bawden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Week 6: Weather Shoes</h1>
+        <h2>Sarah Bawden</h2>
+    </header>
+    <main>        
+        <h3>Footwear Selector:</h3>
+        <label>
+            <select name="weather" id="weather">
+                <option value="" disabled selected>-- Select the Weather --</option>
+                <option value="snow">Snow</option>
+                <option value="rain">Rain</option>
+                <option value="hot">Hot</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </label>
+        <label><button onclick="pickShoes()">Pick Shoes</button></label>
+        <hr>
+        <p id="shoesies"></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Sarah Bawden &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="scripts/footwear.js"></script>
+</body>
+
+</html>
