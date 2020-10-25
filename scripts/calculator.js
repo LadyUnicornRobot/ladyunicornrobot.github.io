@@ -1,4 +1,4 @@
-function checkMath(){ //collect all inputs from user, two numbers, an answer, and operator
+function checkMath() { //collect all inputs from user, two numbers, an answer, and operator
     let number1 = parseFloat(document.getElementById("number1").value);
     let number2 = parseFloat(document.getElementById("number2").value);
     let operator = document.getElementById("operator").value;
@@ -8,7 +8,7 @@ function checkMath(){ //collect all inputs from user, two numbers, an answer, an
     let total;
 
     // processing, do switch based on operator
-    switch(operator) {
+    switch (operator) {
         case "+":
             total = number1 + number2
             break;
@@ -28,4 +28,5 @@ function checkMath(){ //collect all inputs from user, two numbers, an answer, an
         alert = "Incorrect 😢"
     }
     // alert to html
-    document.getElementById("output").innerHTML = alert
+    document.getElementById("output").innerHTML = alert;
+}
