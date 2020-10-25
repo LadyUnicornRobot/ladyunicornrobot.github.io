@@ -6,39 +6,26 @@ function checkMath(){ //collect all inputs from user, two numbers, an answer, an
 
     // create variables for doing internal calculations
     let total;
-    let message;
-    // check for operator match
-    if (operator == "+") {
-        // do internal calculation
-        total = number1 + number2;
-        // check calculation with input answer and determine message
-    } if (total == answer) {
-        message = "Correct! 🏆";
-    } else {
-        message = "Incorrect 😢";
+
+    // processing, do switch based on operator
+    switch(operator) {
+        case "+":
+            total = number1 + number2
+            break;
+        case "-":
+            total = number1 - number1
+            break;
+        case "*":
+            total = number1 * number2
+            break;
+        case "/":
+            total = number1 / number2
     }
-    // copy and paste three more times for three other operators, change operators in each if else set
-    if (operator == "-") {
-        total = number1 - number2;
-    } if (total == answer) {
-        message = "Correct! 🏆";
+    // check answer with user's input
+    if (answer === total) {
+        alert = "Correct! 🏆"
     } else {
-        message = "Incorrect 😢";
+        alert = "Incorrect 😢"
     }
-    if (operator == "*") {
-        total = number1 * number2;
-    } if (total == answer) {
-        message = "Correct! 🏆";
-    } else {
-        message = "Incorrect 😢";
-    }
-    if (operator == "/") {
-        total = number1 / number2;
-    } if (total == answer) {
-        message = "Correct! 🏆";
-    } else {
-        message = "Incorrect 😢";
-    }
-    // output message to user
-    document.getElementById("output").innerHTML = message;
-}
+    // alert to html
+    document.getElementById("output").innerHTML = alert
