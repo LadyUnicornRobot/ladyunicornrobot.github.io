@@ -78,7 +78,7 @@ button {
 	border-radius: 3px;
 }
 
-#output, #kilograms, #shoesies, #message {
+#output, #kilograms, #shoesies, #message, #grandTotal {
 	font-family: Montserrat, sans-serif;
 	font-size: 1.3em;
 	color: #FFBC0A;
