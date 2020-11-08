@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Fix Loops - Sarah Bawden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Week 8: Fix Loop Structures</h1>
+        <h2>Sarah Bawden</h2>
+    </header>
+    <main>
+        <div id=display1></div>
+        <div id=display2></div>
+        <div id=display3></div>
+        <div id=display4></div>
+    </main>
+    <footer>
+        &copy;2020 &bull; Sarah Bawden &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        let output1;
+        let i = 0;
+        while (i < 2) {
+            output1 += `Part 1:${i}<br>`;
+            i++;
+        }
+        document.getElementById('display1').innerHTML = output1;
+
+        var output2;
+        for (let j = 0; j < 3; j++) {
+            if (j !== 2) {
+                output2 += `Part 2:${j}, `;
+            }
+            else {
+                output2 += `Part 2:${j}`;
+            }
+        }
+        document.getElementById('display2').textContent = output2;
+
+        let output3;
+        for (let k = 0; k < 4; k++) {
+            output3 += k + " ";
+        }
+        document.getElementById('display3').textContent = output3;
+
+        let balance = 1000;
+        let interest;
+        const rate = .10;
+        let n = 30;
+        for (let s = 0; s < n; s++) {
+            interest = balance * rate;
+            balance += interest;
+        }    
+        document.getElementById('display4').textContent = balance;
+        // can't figure out why my balance is so high
+        // for all four, can't figure out why it is showing as undefinedPart or what I need to do to fix that
+    </script>
+</body>
+
+</html>
