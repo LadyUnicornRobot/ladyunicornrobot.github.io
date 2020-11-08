@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Template - Sarah Bawden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Week 8: Loops</h1>
+        <h2>Sarah Bawden</h2>
+    </header>
+    <main>
+        
+        <label><button onclick="runFunction()">Ninja Cat Numbers</button></label>
+        <label><button onclick="runFives()">Hacker Cat Numbers</button></label>
+        <hr>
+        <p id="output"></p>
+        <p id="output2"></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Sarah Bawden &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        // for functions
+        function runFunction() {
+        // control variable
+        const limit = 100;
+        let message = "";
+        for (let i = 1; i <= 100; i++) {
+            message += `🐱‍👤 ${i}<br>`;
+        }
+        document.getElementById("output").innerHTML = message;
+    }
+    function runFives() {
+        // control variable
+        const limit = 100;
+        let message = "";
+        for (let i = 5; i <= 100; i = i + 5) {
+            message += `🐱‍💻 ${i}<br>`;
+        }
+        
+        //while function
+        let message2 = "";
+        let i = 5;
+        while (i <= 100) {
+            message2 += `🐱‍ ${i}<br>`;
+            i = i + 5;
+        }
+        document.getElementById("output").innerHTML = message;
+        document.getElementById("output2").innerHTML = message2;
+    
+    }
+    function highFive () {
+        //trying out the do...while loop
+        let i = 0;
+        do {
+            i += 1;
+            console.log(i);
+        } while (i < 5);
+    }
+    </script>
+</body>
+
+</html>
+
+<!-- repetition control structures
+for and while are pre-test loops 
+setting up a loop, control the loops;
+control variable set up, condition, iteration
+a do...while statement repeats until a specified condition evaluates to false. Condition test occurs before statement in the loop is executed. Test = true, then execute.
+-->
+<!-- for ([initialExpression}; [conditionExpression]; [incrementExpression]) {
+statement [aka loop statement, right?]
+initial - expression of any degree of complexity, can declare variables
+condition - evaluated by the computer, if true[or missing], loop statements execute, if false 'for' loop terminates    
+statement executes ▢look up what block statements are? ({ ... })
+increment - update expression, updates the initial, then computer (Control) returns to step 2
+}-->
+
+<!-- an example of really good pseudocode
+/* Input:
+ *    An amount to invest: balance
+ *    The annual rate of growth: annualRate
+ *    The number of months to invest: numMonths
+ * Processing: Use a loop to compute the balance of an account after
+ *     a bank has paid interest for numMonths number of months.
+ * Output: The balance after numMonths have passed.
+ */
+-->
