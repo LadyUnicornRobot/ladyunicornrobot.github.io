@@ -19,15 +19,14 @@ document.getElementById("output").innerHTML = "Windchill is " + windchill.toFixe
 
 }
 
-function windChill(tempF, speed) {
+function windChill(t, s) {
 /* take a temperature in F as parameter
 * take wind speed in mph as parameter
 * calculate wind chill factor as temp F
 * return wind chill factor in F
 * NO input NO output, only calculate and return result
 */
-let t = tempF;
-let s = speed;
+
 let f = 35.74 + (0.6215 * t) - (35.75 * (s ** 0.16)) + (0.4275 * t) * (s ** 0.16);
 return f;
 }
