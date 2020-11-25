@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 | Investment Calculator | Sarah Bawden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Week 11: Investment Calculator</h1>
+        <h2>Sarah Bawden</h2>
+    </header>
+    <main>
+        <h3>Investment Calculator</h3>
+        <label>Amount invested (principal) <input type="text" id="principal"></label>
+        <label>Annual rate (example: .08) <input type="text" id="interest"></label>
+        <label>Number of years <input type="text" id="numYears"></label>
+        <label>Periods per year <input type="text" id="pPerYear"></label>
+        <button type="button" onclick="doFV()">Compute future value</button>
+        <p id="futureValue"></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Sarah Bawden &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="scripts/invest.js"></script>
+</body>
+
+</html>

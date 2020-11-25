@@ -78,7 +78,7 @@ button {
 	border-radius: 3px;
 }
 
-#output, #kilograms, #shoesies, #message, #grandTotal {
+#output, #kilograms, #shoesies, #message, #grandTotal, #futureValue, #payoffOutput, #paymentOutput {
 	font-family: Montserrat, sans-serif;
 	font-size: 1.3em;
 	color: #FFBC0A;
