@@ -13,7 +13,7 @@ function test() {
 
     // Test the multiply function by calling it two times.
     let mult1 = multiply(list1, 3);
-    let mult2 = multiply(list2, 4);
+    let mult2 = multiply(list2, 2);
 
     // Build a string to display to the user.
     let output =
@@ -27,36 +27,35 @@ function test() {
 }
 
 function countEvens(list) {
-    // for each array element of list, check for % 2 == 0
-    // return number of elements that are even
-    // var 'count' for holding counter, i++
-    // list.forEach(evenCount)
-    let i;
+    // set variables count, i
     let count = 0;
-    for (i = 0, i < list.length, i++) {
+    let i = 0;
+    // how does the counter go up? each time it meets an even number
+    while (i < list.length) {
         if (list[i] % 2 == 0) {
             count++;
+            i++;
+        } else {
+            i++;
         }
-        return count;
     }
-
+    // return the count
+    return count;
 }
 
 
 function multiply(list, multiplier) {
     // returns a new array of original elements all multiplied by the argument sent
     // for each element in list, multiply by multiplier
-    let i;
-    let list2;
-    for (i = 0, i < list.length, i++) {
+    let newlist = [];
+    for (i = 0; i < list.length; i++) {
         let product = list[i] * multiplier;
-        list2.push(product);
-        return list2;
+        newlist.push(product);
     }
-
+    return newlist;
 
     // make or repopulate an array, return an array
 }
 
 // push and pop
-// new array as var, array.push to add, return new array
+// new array as var, array.push to add, return new array 
