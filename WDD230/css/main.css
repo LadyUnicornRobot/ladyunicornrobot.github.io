@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik:wght@500&display=swap');
+
+#content {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 700px;
+  display: block;
+  margin: auto;
+}
+
+header,
+nav,
+main,
+footer {
+  margin: 1.25rem auto;
+}
+
+header h1 {
+  background-color: #441122;
+  color: #DD88AA;
+  padding: 25px;
+  margin: 0;
+  font-family: 'Dancing Script', serif;
+}
+
+nav {
+  display: block;
+  list-style: none;
+  align-items: center;
+  justify-items: center;
+}
+h2 {
+    font-family: Rubik, sans-serif;
+}
+figure img {
+  width: 280px;
+  height: auto;
+}
+figure {
+  float: right;
+  margin-top: -55px;
+}
+figcaption {
+    font-size: .75em;
+    margin-top: -8px;
+}
+footer {
+    background-color: #441122;
+    color: #DD88AA;
+    padding: 10px;
+    text-align: center;
+}
