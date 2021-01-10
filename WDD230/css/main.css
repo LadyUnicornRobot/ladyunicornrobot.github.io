@@ -25,7 +25,7 @@ header h1 {
   padding-left: 30px;
 }
 
-nav{
+nav {
   display: block;
   align-items: center;
   justify-items: center;
@@ -35,7 +35,7 @@ nav li {
   font-family: "Dancing Script", serif;
   list-style: none;
   font-size: 18px;
-  color:#441122;
+  color: #441122;
 }
 
 ul {
