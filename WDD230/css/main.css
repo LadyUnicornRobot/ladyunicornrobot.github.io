@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik:wght@500&display=swap");
 
 #content {
   font-size: 16px;
@@ -17,20 +17,39 @@ footer {
 
 header h1 {
   background-color: #441122;
-  color: #DD88AA;
-  padding: 25px;
+  color: #dd88aa;
+  padding: 40px;
   margin: 0;
-  font-family: 'Dancing Script', serif;
+  font-family: "Dancing Script", serif;
+  font-size: 55px;
+  padding-left: 30px;
 }
 
-nav {
+nav{
   display: block;
-  list-style: none;
   align-items: center;
   justify-items: center;
 }
+
+nav li {
+  font-family: "Dancing Script", serif;
+  list-style: none;
+  font-size: 18px;
+  color:#441122;
+}
+
+ul {
+  padding-left: 30px;
+}
+nav li a {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
 h2 {
-    font-family: Rubik, sans-serif;
+  font-family: Rubik, sans-serif;
+  color: #441122;
+  padding-left: 30px;
+  font-size: 30px;
 }
 figure img {
   width: 280px;
@@ -38,15 +57,17 @@ figure img {
 }
 figure {
   float: right;
-  margin-top: -55px;
+  margin-top: -75px;
 }
 figcaption {
-    font-size: .75em;
-    margin-top: -8px;
+  font-size: 0.75em;
+  margin-top: -8px;
+  font-family: "Dancing Script", serif;
+  color: #441122;
 }
 footer {
-    background-color: #441122;
-    color: #DD88AA;
-    padding: 10px;
-    text-align: center;
+  background-color: #441122;
+  color: #dd88aa;
+  padding: 10px;
+  text-align: center;
 }
