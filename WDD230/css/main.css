@@ -55,10 +55,6 @@ figure img {
   width: 280px;
   height: auto;
 }
-figure {
-  float: right;
-  margin-top: -75px;
-}
 figcaption {
   font-size: 0.75em;
   margin-top: -8px;
