@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans&display=swap");
+
+/* CSS grid for main */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 900px;
+  gap: 1em;
+  margin: auto auto;
+  max-width: 660px;
+  text-align: left;
+}
+
+/* resize the images to fit within the grid
+I don't know how to get them to scale up and down as the screen width is adjusted. ):
+Found it. Responsive design.
+*/
+
+span img {
+  width: 60%;
+  max-width: 10em;
+  height: auto;
+  border: 0.5px solid #000;
+  border-radius: 15px;
+  margin: 1em;
+}
+
+/* add background so each column is visible. */
+
+main span {
+  background-color: #f1f7ee;
+  border-radius: 15px;
+}
+
+main span h3,
+main span p,
+main span a {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+main span p,
+main span a {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* style the headings and pick google fonts to add to page. */
+
+header, footer {
+  background-color: #7f9673;
+  text-align: center;
+}
+
+footer {
+    margin-top: 2em;
+    padding: .2em;
+}
+
+span h3 {
+  background-color: #FFDA22;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Krona One", sans-serif;
+  padding: 0.2em;
+}
+
+h1,
+h2 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.5em;
+  color: #FFDA22;
+  padding: .2em;
+}
+
+/* can't figure out how to align the photos center
+add footer from portal page. change fonts for body copy */

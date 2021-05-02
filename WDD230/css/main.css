@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik:wght@500&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik:wght@500&display=swap");
+*/
 
 #content {
   font-size: 16px;
@@ -55,6 +56,11 @@ figure img {
   width: 280px;
   height: auto;
 }
+
+figure {
+  float: right;
+}
+
 figcaption {
   font-size: 0.75em;
   margin-top: -8px;
@@ -68,5 +74,9 @@ footer {
   text-align: center;
 }
 footer a:link {
-  color: #624EF9;
+  color: #CBC4FD;
+}
+
+footer a:visited {
+  color: #dd88aa;
 }
