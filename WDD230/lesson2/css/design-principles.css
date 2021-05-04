@@ -9,7 +9,49 @@ main {
   gap: 1em;
   margin: auto auto;
   max-width: 660px;
-  text-align: left;
+}
+
+header {
+  border-radius: 0 0 15px 15px;
+}
+
+header,
+footer {
+  background-color: #002c38;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.5em;
+  color: #ffda22;
+  padding: 0.2em;
+}
+
+main span {
+  background-color: #fffabf;
+  border-radius: 15px;
+}
+
+h2 {
+  background-color: #ffda22;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  margin: 0;
+  padding: 0.25em;
+  font-family: "Krona One", sans-serif;
+  padding: 0.5em;
+  color: #002c38;
+  font-size: 1em;
+}
+
+h3 {
+  margin: 0.5em;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #002c38;
 }
 
 /* resize the images to fit within the grid
@@ -17,62 +59,70 @@ I don't know how to get them to scale up and down as the screen width is adjuste
 Found it. Responsive design.
 */
 
+.bodylink {
+  text-align: center;
+}
+
 span img {
   width: 60%;
   max-width: 10em;
   height: auto;
   border: 0.5px solid #000;
   border-radius: 15px;
-  margin: 1em;
+  margin: 1em auto;
+  display: block;
 }
 
 /* add background so each column is visible. */
 
-main span {
-  background-color: #f1f7ee;
-  border-radius: 15px;
+main a {
+  text-align: center;
 }
 
-main span h3,
-main span p,
-main span a {
-    padding-left: 1em;
-    padding-right: 1em;
+main a:visited {
+  color: #257385;
 }
-main span p,
-main span a {
-    font-family: "Open Sans", sans-serif;
+
+main p,
+main a {
+  font-family: "Open Sans", sans-serif;
+  color: #002c38;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+p {
+  text-align: left;
 }
 
 /* style the headings and pick google fonts to add to page. */
 
-header, footer {
-  background-color: #7f9673;
-  text-align: center;
-}
-
 footer {
-    margin-top: 2em;
-    padding: .2em;
-}
-
-span h3 {
-  background-color: #FFDA22;
-  border-radius: 15px 15px 0 0;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  font-family: "Krona One", sans-serif;
+  margin-top: 1em;
   padding: 0.2em;
-}
-
-h1,
-h2 {
-  font-family: "Krona One", sans-serif;
-  font-size: 1.5em;
-  color: #FFDA22;
-  padding: .2em;
+  color: #ffda22;
+  border-radius: 15px 15px 0 0;
 }
 
 /* can't figure out how to align the photos center
 add footer from portal page. change fonts for body copy */
+
+footer a:visited {
+  color: #fffabf;
+}
+
+/* 628px is when to switch to 2 columns.*/
+
+@media screen and (max-width: 628px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
