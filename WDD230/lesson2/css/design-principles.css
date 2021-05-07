@@ -28,7 +28,7 @@ h1 {
   padding: 0.2em;
 }
 
-main span {
+main div {
   background-color: #fffabf;
   border-radius: 15px;
 }
@@ -63,7 +63,7 @@ Found it. Responsive design.
   text-align: center;
 }
 
-span img {
+div img {
   width: 60%;
   max-width: 10em;
   height: auto;
@@ -106,6 +106,14 @@ footer {
 
 /* can't figure out how to align the photos center
 add footer from portal page. change fonts for body copy */
+
+footer a:link {
+  color: #257385;
+}
+
+footer a:active {
+  color: #ffda22;
+}
 
 footer a:visited {
   color: #fffabf;
