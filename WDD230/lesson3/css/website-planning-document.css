@@ -3,139 +3,174 @@
 /* ALL PAGES */
 
 h1 {
-    font-family: Lato, Arial, Helvetica, sans-serif ;
-    font-weight: 700;
-    font-size: 4em;
-    text-align: center;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+  text-align: center;
 }
 
 h2 {
-    font-family: Lato, Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 1.7em;
-    font-style: italic;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.7em;
+  font-style: italic;
 }
 
 h3 {
-    font-family: Lato, Arial, Helvetica, sans-serif ;
-    font-weight: 700;
-    font-size: 1em;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
 }
 
 p {
-    font-family: Assistant, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-
+  font-family: Assistant, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 #content {
-    width: 680px;
-    margin: auto;
+  width: 680px;
+  margin: auto;
 }
 
-#topnav ul {
+/* #topnav ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
+} */
+
+#topnav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
 }
 
 #topnav a {
-    text-decoration: none;
-    font-family: Assistant, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    font-size: 1em;
+  text-decoration: none;
+  font-family: Assistant, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 #logo {
-    max-width: 5em;
+  max-width: 5em;
 }
 
 footer {
-    text-align: center;
-    font-family: Merriweather, 'Times New Roman', Times, serif;
-    font-size: .7em;
-    margin: 1em;
+  text-align: center;
+  font-family: Merriweather, "Times New Roman", Times, serif;
+  font-size: 0.7em;
+  margin: 1em;
 }
 
 /* TARGET AUDIENCE */
 
 #targetaudiencegrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
 }
 /*go back and redo target audience grid with three columns and assign bios to cross two grid squares and photos to cross one so it's more equal.*/
 
 /* TYPOGRAPHY */
 
 #h1sample {
-    font-family: Lato, Arial, Helvetica, sans-serif ;
-    font-weight: 700;
-    font-size: 4em;
-    text-align: center;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+  text-align: center;
 }
 
 #h2sample {
-    font-family: Lato, Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 1.7em;
-    font-style: italic;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.7em;
+  font-style: italic;
 }
 
 #h3sample {
-    font-family: Lato, Arial, Helvetica, sans-serif ;
-    font-weight: 700;
-    font-size: 1em;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
 }
 
 #psample {
-    font-family: Assistant, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    font-size: 1em;
+  font-family: Assistant, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 #fineprintsample {
-    text-align: center;
-    font-family: Merriweather, 'Times New Roman', Times, serif;
-    font-size: .7em;
-    margin: 1em;
+  text-align: center;
+  font-family: Merriweather, "Times New Roman", Times, serif;
+  font-size: 0.7em;
+  margin: 1em;
 }
 
 /* COLOR SCHEME */
 
 #colorschemegrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 8em);
-    gap: .5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 8em);
+  gap: 0.5em;
 }
 
 #dkbluesquare {
-    background-color: #144891;
+  background-color: #144891;
 }
 
 #yellowsquare {
-    background-color: #f8f04b;
+  background-color: #f8f04b;
 }
 
 #redsquare {
-    background-color: #ca1231;
+  background-color: #ca1231;
 }
 
 #greensquare {
-    background-color: #65a747;
+  background-color: #65a747;
 }
 
 #ltgreensquare {
-    background-color: #97e23c;
+  background-color: #97e23c;
 }
 
 #mdbluesquare {
-    background-color: #1d66cc;
+  background-color: #1d66cc;
 }
 
 #ltbluesquare {
-    background-color: #a3d5ff;
+  background-color: #a3d5ff;
+}
+
+/* add mobile screen size */
+
+@media screen and (max-width: 360px) {
+  #topnav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #content {
+      margin: auto;
+      max-width: 300px;
+  }
+
+  #targetaudiencegrid {
+      display: block;
+  }
+  
+  #colorschemegrid {
+      display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
 }
