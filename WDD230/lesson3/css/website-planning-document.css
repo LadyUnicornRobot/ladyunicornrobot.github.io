@@ -14,6 +14,7 @@ h2 {
   font-weight: 300;
   font-size: 1.7em;
   font-style: italic;
+  margin-bottom: 1em;
 }
 
 h3 {
@@ -34,13 +35,6 @@ p {
   margin: auto;
 }
 
-/* #topnav ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;
-} */
-
 #topnav ul {
   display: flex;
   list-style: none;
@@ -52,6 +46,15 @@ p {
   font-family: Assistant, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
   font-weight: 400;
+  font-size: 1em;
+}
+
+ol {
+  padding-left: 1em;
+}
+
+ol li {
+  font-family: Assistant, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1em;
 }
 
@@ -115,7 +118,7 @@ footer {
 
 #colorschemegrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 8em);
   gap: 0.5em;
 }
@@ -128,49 +131,66 @@ footer {
   background-color: #f8f04b;
 }
 
-#redsquare {
-  background-color: #ca1231;
-}
-
-#greensquare {
-  background-color: #65a747;
-}
-
-#ltgreensquare {
-  background-color: #97e23c;
-}
-
-#mdbluesquare {
-  background-color: #1d66cc;
-}
-
 #ltbluesquare {
   background-color: #a3d5ff;
 }
 
+#blacksquare {
+  background-color: black;
+
+
+}
+
+/* add tablet screen size */
+
+
+
 /* add mobile screen size */
 
+@media screen and (max-width: 700px) {
+  #topnav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0 .2em;
+  }
+
+  #content {
+    margin: auto;
+    max-width: 100%;
+  }
+
+  #targetaudiencegrid {
+    display: block;
+  }
+
+  #colorschemegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  #colorschemegrid p {
+    margin: 0;
+}
+
 @media screen and (max-width: 360px) {
+
+  #colorschemegrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+  
   #topnav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-
-  #content {
-      margin: auto;
-      max-width: 300px;
-  }
-
-  #targetaudiencegrid {
-      display: block;
-  }
-  
-  #colorschemegrid {
-      display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-    }
 
 }
