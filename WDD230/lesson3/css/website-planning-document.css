@@ -142,9 +142,6 @@ footer {
 }
 
 /* add tablet screen size */
-
-
-
 /* add mobile screen size */
 
 @media screen and (max-width: 700px) {
@@ -192,5 +189,4 @@ footer {
     align-items: center;
     justify-content: space-around;
   }
-
 }
